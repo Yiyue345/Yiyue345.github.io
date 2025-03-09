@@ -26,7 +26,7 @@ titles:
 key: page-about
 ---
 
-<div>{%- include extensions/netease-cloud-music.html id='2034454236' -%}</div>
+<div>{%- include extensions/bilibili.html id='113713621369471' -%}</div>
 
 如此渺小的我们，何时才能绽放自己的光芒呢？平凡的人只能行平凡之事，在无数个日夜处于中压力迷茫又麻木地运转吧
 
