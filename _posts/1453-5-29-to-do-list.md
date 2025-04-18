@@ -25,6 +25,8 @@ excerpt: 哪天想起来了就填一下坑吧
 
 [Future](用Flutter让你飞起来！/2025-2-22-你的Future是怎样的？.md)还没完工
 
+加上shadowThemeOnly -> InheritedTheme.capture
+
 # 计划中的东西
 
 更多数据结构（栈，队列和树！）
