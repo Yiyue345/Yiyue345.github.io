@@ -11,11 +11,13 @@ excerpt: 这可方便了
 
 ### 啥是ViewModel
 
-这玩意就是Activity和Fragment之间的桥梁，而且即使Acitivity重新创建（旋转）了也不为所动，因此可以拿来保存两者共有的数据
+这玩意就是 Activity 和 Fragment 之间的桥梁，而且即使 Acitivity 重新创建（旋转）了也不为所动，因此可以拿来保存两者共有的数据
+
+更准确地说，它其实是逻辑与界面之间的桥梁
 
 ### 怎么用
 
-创建一个ViewModel只要继承一个就好啦
+创建一个 ViewModel 只要继承一个就好啦
 
 ```kotlin
 class MyViewModel : ViewModel()
@@ -70,3 +72,18 @@ myViewModel = ViewModelProvider(this, MyViewModelFactory(number))[MyViewModel::c
 ```
 
 当当当，大功告成！
+
+## 大人，时代变了
+
+在用 Compose 的时代，如果我们不在 Activity 或者 Fragment 的作用域里面，显然上面那些经典的方法是用不了的
+
+当然，新时代也是有新时代的方法的！~~（不过这些方法似乎不自带~~
+
+首先需要加上`androidx-lifecycle-viewmodel-compose`这个包
+
+然后我们只需要在 Composable 函数中这样
+
+```kotlin
+val viewModel: HomepageViewModel = viewModel()
+```
+就可以用 ViewModel 了，是不是非常简单呢
