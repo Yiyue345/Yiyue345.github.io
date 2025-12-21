@@ -86,4 +86,5 @@ myViewModel = ViewModelProvider(this, MyViewModelFactory(number))[MyViewModel::c
 ```kotlin
 val viewModel: HomepageViewModel = viewModel()
 ```
+
 就可以用 ViewModel 了，是不是非常简单呢
