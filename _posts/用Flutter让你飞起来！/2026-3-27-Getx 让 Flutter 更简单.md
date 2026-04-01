@@ -1,3 +1,8 @@
+---
+tags:
+  - flutter
+excerpt: 好用爱用
+---
 > Flutter made easy
 > 这可不是我说的啊，他们的 readme 就是这么写的
 
